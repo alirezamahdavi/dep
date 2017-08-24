@@ -60,7 +60,8 @@ class dataproc extends Component{
         )
     }
     componentDidMount (){
-        axios.get('http://localhost:8080/passed?code='+ this.props.location.query.code).then(res=>{
+        //////////////////&&&&&&&&&&&&&&&&&&&&&&&/////////////////////////
+        axios.get('/passed?code='+ this.props.location.query.code).then(res=>{
         //console.log(res);
         //console.log(res.data)
         this.setState({

@@ -16,7 +16,8 @@ class fit extends Component {
     handleClickForFitBit(e) {
         e.preventDefault();
         console.log('The link was clicked to go to fitbit');
-        const promise = axios.get('http://localhost:8080/authorize')
+        //////////////////////////***********************************//////////////////////////////
+        const promise = axios.get('/authorize')
         promise.then((result)=>{
             console.log('succes!', result)
             window.location = result.data;
